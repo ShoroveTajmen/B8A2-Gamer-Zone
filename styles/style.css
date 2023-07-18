@@ -1,5 +1,7 @@
 /* Shared common style */
-
+* {
+  font-family: "Work Sans", sans-serif;
+}
 /* nav section style start */
 .nav-container {
   display: flex;
@@ -66,11 +68,86 @@
 }
 /* nav section style end */
 
-
-
-
-
-
+/* banner section start */
+.banner-container {
+  width: 1920px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../images/Group 14.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.banner-details {
+  margin-left: 150px;
+}
+.banner-info {
+  text-align: start;
+}
+.banner-title1 {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.banner-title2 {
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 20px;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-des {
+  display: flex;
+  list-style: none;
+  margin-right: 5px;
+  color: #534c64;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.banner-des-img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.banner-btn1 {
+  display: inline-flex;
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  background: #ff42a5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+.banner-btn2 {
+  display: inline-flex;
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  background: #4ec5f7;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+}
+.banner-image {
+  margin-right: 120px;
+}
+/* bannerr section end */
 
 /* Responsive part start here */
 /* Responsive for mobile device */
@@ -94,4 +171,26 @@
     margin-bottom: 50px;
   }
   /* nav responsive end */
+
+  /* banner section start */
+  .banner-container {
+    flex-direction: column-reverse;
+    width: auto;
+    background-image: none;
+  }
+  .banner-image {
+    width: 400px;
+    height: 446px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+  }
+  .banner-details {
+    margin-left: 0px;
+  }
+  .banner-info {
+    background-image: url("../images/Group 14.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /* banner section end */
 }
