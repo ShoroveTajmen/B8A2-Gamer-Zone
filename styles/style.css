@@ -1,0 +1,97 @@
+/* Shared common style */
+
+/* nav section style start */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1920px;
+  height: 130px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav-logo {
+  width: 86.041px;
+  height: 40px;
+}
+.nav-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.nav-g {
+  color: #ff42a5;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+.nav-item {
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-button {
+  padding: 5px 28px;
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  border: none;
+}
+.fa-brands {
+  padding: 5px;
+}
+.fa-youtube {
+  color: red;
+}
+.tik-tok {
+  background: -webkit-linear-gradient(left, #08fff9, #000000, #f00044);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 2px 4px 3px rgba(#08fff9, #000000, #f00044, alpha);
+}
+/* nav section style end */
+
+
+
+
+
+
+
+/* Responsive part start here */
+/* Responsive for mobile device */
+@media screen and (max-width: 576px) {
+  /* nav responsive start */
+  .nav-container {
+    width: auto;
+    flex-direction: column;
+    height: 330px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  }
+  .items {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+  .nav-item {
+    margin-bottom: 20px;
+  }
+  .nav-button {
+    margin-bottom: 50px;
+  }
+  /* nav responsive end */
+}
