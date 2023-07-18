@@ -106,11 +106,14 @@
   display: flex;
   list-style: none;
   margin-right: 5px;
+}
+.banner-description{
   color: #534c64;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
   text-transform: lowercase;
+
 }
 .banner-des-img {
   margin-right: 10px;
@@ -148,6 +151,54 @@
   margin-right: 120px;
 }
 /* bannerr section end */
+/* online games section style start */
+.games-container {
+  margin-top: 100px;
+  width: 1920px;
+  height: 600px;
+}
+.games-info {
+  text-align: center;
+}
+.games-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 20px;
+}
+.fun-video {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+}
+.games-description {
+  color: #534c64;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+.card-img {
+  width: 342px;
+  height: 400px;
+}
+.card-description {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+}
+.games-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 220px;
+}
+.card-images {
+}
 
 /* Responsive part start here */
 /* Responsive for mobile device */
@@ -191,6 +242,46 @@
     background-image: url("../images/Group 14.png");
     background-repeat: no-repeat;
     background-size: contain;
+    text-align: start;
+    
   }
+  .banner-title1 {
+    font-size: 40px;
+  }
+  .banner-title2 {
+    font-size: 60px;
+  }
+
   /* banner section end */
+
+  /* online games section start */
+  .games-container {
+    width: auto;
+  }
+  .games-card {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .card-img {
+    width: 280px;
+    height: 350px;
+  }
+  .games-title {
+    margin: 0px;
+    font-size: 25px;
+  }
+  .fun-video {
+    font-size: 25px;
+  }
+  .games-description {
+    font-size: 15px;
+  }
+  .card-description {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .card-description br {
+    display: none;
+  }
 }
