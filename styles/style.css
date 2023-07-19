@@ -1,5 +1,6 @@
 /* Shared common style */
-* {
+
+body {
   font-family: "Work Sans", sans-serif;
 }
 /* nav section style start */
@@ -246,6 +247,101 @@
 }
 /* play section end */
 
+/* game types section start */
+.game-types-conttainer {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 2px solid rebeccapurple;
+}
+.pic1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 230px;
+  height: 70px;
+  border-radius: 50px;
+  background: #fff;
+  border: 1px solid rebeccapurple;
+}
+.game-des {
+  color: #0b0223;
+  font-size: 20px;
+  font-weight: 600;
+}
+.FirstRow-games {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.row2-games {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+/* footer style start */
+.footer-container {
+  width: 1920px;
+  height: 636px;
+  background: #0b0223;
+}
+.amer {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+}
+.footer-support {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.item {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-link {
+  margin-top: 50px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.link {
+  color: white;
+  width: 70px;
+  height: 70px;
+}
+.utube {
+  color: white;
+}
+.footer-privacy {
+  margin-top: 20px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.privacy {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
+.copy {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+/* footer sectiion end */
+
 /* Responsive part start here */
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
@@ -360,4 +456,30 @@
     height: auto;
   }
   /* play section end */
+
+  /* footer section start */
+  .footer-container {
+    width: auto;
+  }
+  .footer-support {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .footer-link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    margin-left: 80px;
+  }
+  .footer-privacy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 50px;
+  }
+  .copy {
+    margin: 86px;
+  }
+  /* footer section end */
 }
