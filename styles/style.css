@@ -182,7 +182,7 @@ body {
   margin-top: 10px;
   margin-bottom: 70px;
 }
-.card-img {
+.image{
   width: 342px;
   height: 400px;
 }
@@ -190,6 +190,41 @@ body {
   color: #534c64;
   font-size: 20px;
   font-weight: 500;
+}
+.card-img {
+  width: 342px;
+  height: 400px;
+  position: relative;
+}
+
+.card-img:hover {
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-img:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-icon {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.overlay-text {
+  color: rgb(232, 7, 127);
+  font-size: 20px;
+  font-weight: 600;
 }
 .games-card {
   display: flex;
@@ -200,8 +235,6 @@ body {
 /* online game section style end */
 
 /* play section style start  */
-.play-section {
-}
 .play-container {
   width: 1920px;
   height: 800px;
@@ -404,7 +437,7 @@ body {
     flex-direction: column;
     margin-left: 0px;
   }
-  .card-img {
+  .image {
     width: 280px;
     height: 350px;
   }
@@ -417,6 +450,15 @@ body {
   }
   .games-description {
     font-size: 15px;
+  }
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
   .card-description {
     font-size: 10px;
