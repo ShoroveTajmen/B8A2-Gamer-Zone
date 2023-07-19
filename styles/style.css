@@ -182,7 +182,7 @@ body {
   margin-top: 10px;
   margin-bottom: 70px;
 }
-.image{
+.image {
   width: 342px;
   height: 400px;
 }
@@ -282,10 +282,13 @@ body {
 
 /* game types section start */
 .game-types-conttainer {
-  width: 1200px;
-  height: 200px;
-  margin: 0 auto;
-  border: 2px solid rebeccapurple;
+  width: 1920px;
+  height: 427px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
 }
 .pic1 {
   display: flex;
@@ -296,21 +299,38 @@ body {
   height: 70px;
   border-radius: 50px;
   background: #fff;
-  border: 1px solid rebeccapurple;
+}
+.pic1:hover{
+  border: 1px solid rgb(239, 10, 132);
+}
+.pic1:hover .game-des {
+  color: rgb(239, 10, 132); 
 }
 .game-des {
   color: #0b0223;
   font-size: 20px;
   font-weight: 600;
 }
-.FirstRow-games {
+/* .game-des:hover{
+  color: #ff42a5;
+} */
+.row1-games {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 10px;
+  padding-top: 130px;
 }
 .row2-games {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 /* footer style start */
@@ -435,7 +455,7 @@ body {
   }
   .games-card {
     flex-direction: column;
-    margin-left: 0px;
+    margin-left: 60px;
   }
   .image {
     width: 280px;
@@ -463,7 +483,8 @@ body {
   .card-description {
     font-size: 10px;
     text-align: center;
-    margin-top: 30px;
+    margin-right: 60px;
+    margin-top: 0px;
   }
   .card-description br {
     display: none;
@@ -484,6 +505,7 @@ body {
   }
   .play-title {
     font-size: 36px;
+    
   }
   .play-img1 {
     width: 300px;
@@ -498,6 +520,35 @@ body {
     height: auto;
   }
   /* play section end */
+
+  /* types of game section start */
+  .game-types-conttainer {
+    width: auto;
+    height: 500px;
+  }
+  .row1-games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+  }
+  .row2-games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pic1 {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: #fff;
+  }
+  .game-pic {
+    width: 30px;
+    height: 30px;
+  }
+  .game-des {
+    font-size: 15px;
+    font-weight: 300;
+  }
 
   /* footer section start */
   .footer-container {
