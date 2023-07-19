@@ -1,4 +1,8 @@
 /* Shared common style */
+*{
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
   font-family: "Work Sans", sans-serif;
@@ -174,6 +178,7 @@ body {
   text-align: right;
 }
 .gamer-title {
+  margin-bottom: 20px;
   font-size: 48px;
   font-weight: 700;
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -185,6 +190,7 @@ body {
   color: #534c64;
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 .gamer-btn {
   padding: 21px 40px;
@@ -195,6 +201,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   border: none;
+  margin-bottom: 20px;
 }
 h4 {
   color: #534c64;
@@ -236,11 +243,13 @@ h4 {
 .image {
   width: 342px;
   height: 400px;
+  margin-top: 20px;
 }
 .card-description {
   color: #534c64;
   font-size: 20px;
   font-weight: 500;
+  margin-top: 20px;
 }
 .card-img {
   width: 342px;
@@ -303,6 +312,7 @@ h4 {
   color: #0b0223;
   font-size: 48px;
   font-weight: 700;
+  padding-bottom: 20px;
 }
 .play {
   font-size: 48px;
@@ -345,11 +355,13 @@ h4 {
   color: #fff;
   font-size: 48px;
   font-weight: 700;
+  padding-bottom: 20px;
 }
 .career-des {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
+  padding-bottom: 20px;
 }
 .proffession {
   display: flex;
@@ -357,6 +369,7 @@ h4 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+  padding-bottom: 20px;
 }
 .country {
   text-align: end;
@@ -491,6 +504,10 @@ h4 {
 /* Responsive part start here */
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
   /* nav responsive start */
   .nav-container {
     width: auto;
@@ -644,6 +661,7 @@ h4 {
   .career-info{
     font-size: 10px;
     font-weight: 400;
+    margin: 20px;
   }
   .career-des{
     font-size: 15px;
@@ -714,4 +732,33 @@ h4 {
     margin: 86px;
   }
   /* footer section end */
+}
+
+/* Responsive ffor tablet */
+@media screen and (min-width:576px) and (max-width:768px) {
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+/* nav bar */
+.nav-item{
+  font-size: 25px;
+}
+.nav-button{
+  font-size: 25px;
+}
+/* gamer section */
+.gamer-des{
+  font-size: 25px;
+}
+h4{
+  font-size: 20px;
+}
+.games-description{
+  font-size: 25px;
+}
+.play-description{
+  font-size: 25px;
+}
+ 
 }
