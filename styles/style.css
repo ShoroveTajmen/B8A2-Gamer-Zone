@@ -330,6 +330,48 @@ h4 {
   height: 365.083px;
 }
 /* play section end */
+/* career section start */
+.career-section {
+  width: 1920px;
+  height: 821px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+.career-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.career-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.career-des {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.proffession {
+  display: flex;
+  gap: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.country {
+  text-align: end;
+}
+.career-btn {
+  padding: 21px 40px;
+  border-radius: 48px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FF42A5;
+  border: none;
+}
+/* career sectiion end */
 
 /* game types section start */
 .game-types-conttainer {
@@ -512,11 +554,13 @@ h4 {
     height: 350px;
     margin-right: 0px;
   }
-  .gamer-info{
+  .gamer-info {
     text-align: center;
   }
+  .gamer-des{
+    font-size: 15px;
+  }
   /* gamer section end */
- 
 
   /* online games section start */
   .games-container {
@@ -589,6 +633,32 @@ h4 {
     height: auto;
   }
   /* play section end */
+  /* career section start */
+  .career-section{
+    width: auto;
+    height: auto;
+  }
+  .career-container{
+    flex-direction: column;
+  }
+  .career-info{
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .career-des{
+    font-size: 15px;
+  }
+  .sec, .cou{
+    font-size: 15px;
+  }
+  .career-btn{
+    padding: 10px 20px;
+  }
+  .c-img{
+    width: 300px;
+    height: 350px;
+  }
+  /* career section end */
 
   /* types of game section start */
   .game-types-conttainer {
