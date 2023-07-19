@@ -126,7 +126,7 @@ body {
   gap: 10px;
   border-radius: 48px;
   background: #ff42a5;
-  color: #fff;
+  color: white;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -151,6 +151,57 @@ body {
   margin-right: 120px;
 }
 /* bannerr section end */
+/* gamer section start */
+.gamer-sectiion {
+  width: 1920px;
+  height: 600px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.gamer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-img {
+  width: 868px;
+  height: 489px;
+}
+.gamer-info {
+  text-align: right;
+}
+.gamer-title {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gamer-des {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+}
+.gamer-btn {
+  padding: 21px 40px;
+  border-radius: 48px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+}
+h4 {
+  color: #534c64;
+  font-size: 15px;
+  font-weight: 500;
+}
+/* gamer section end */
 /* online games section style start */
 .games-container {
   margin-top: 100px;
@@ -300,11 +351,11 @@ body {
   border-radius: 50px;
   background: #fff;
 }
-.pic1:hover{
+.pic1:hover {
   border: 1px solid rgb(239, 10, 132);
 }
 .pic1:hover .game-des {
-  color: rgb(239, 10, 132); 
+  color: rgb(239, 10, 132);
 }
 .game-des {
   color: #0b0223;
@@ -445,8 +496,27 @@ body {
   .banner-title2 {
     font-size: 60px;
   }
-
   /* banner section end */
+
+  /* gamer section start */
+  .gamer-sectiion {
+    width: auto;
+    height: 800px;
+  }
+  .gamer-container {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .game-img {
+    width: 300px;
+    height: 350px;
+    margin-right: 0px;
+  }
+  .gamer-info{
+    text-align: center;
+  }
+  /* gamer section end */
+ 
 
   /* online games section start */
   .games-container {
@@ -505,7 +575,6 @@ body {
   }
   .play-title {
     font-size: 36px;
-    
   }
   .play-img1 {
     width: 300px;
