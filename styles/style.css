@@ -340,6 +340,53 @@ h4 {
   height: 365.083px;
 }
 /* play section end */
+
+/* play games online style start */
+.play-container2 {
+  width: 1920px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  gap: 320px;
+  margin-top: 40px;
+}
+.play-info2 {
+  margin-top: 150px;
+  margin-right: 150px;
+}
+.play-title2 {
+  color: #0B0223;
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.play2 {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.play-description2 {
+  color: #534C64;
+  font-size: 18px;
+  font-weight: 400;
+}
+.play-img12 {
+  width: 634.833px;
+  height: 650px;
+}
+
+.play-img22 {
+  position: relative;
+  bottom: 320px;
+  left: 450px;
+  width: 318px;
+  height: 365px; 
+}
+/* play games online style end*/
+
 /* career section start */
 .career-section {
   width: 1920px;
@@ -506,35 +553,6 @@ h4 {
 }
 /* footer sectiion end */
 
-/* taypes of game start */
-/* .gamingg-container {
-  width: 1920px;
-  height: 427px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 66, 165, 0.03) 0%,
-    rgba(255, 66, 165, 0.03) 100%
-  );
-  margin-top: 30px;
-} */
-.game-btn {
-  margin: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: white;
-  border: none;
-  padding: 5px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.game-btn span {
-  margin-left: 5px;
-}
-
 /* Responsive part start here */
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
@@ -684,6 +702,39 @@ h4 {
     height: auto;
   }
   /* play section end */
+
+    /* play section 2 start */
+    .play-container2 {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 40px;
+      width: auto;
+    }
+    .play-info2 {
+      text-align: center;
+      margin-right: 0px;
+      margin-top: 0px;
+    }
+    .play-info2 br{
+      display: none;
+    }
+    .play-title2 {
+      font-size: 36px;
+    }
+    .play-img12 {
+      width: 300px;
+      height: auto;
+    }
+  
+    .play-img22 {
+      position: relative;
+      bottom: 100px;
+      left: 200px;
+      width: 150px;
+      height: auto;
+    }
+    /* play section 2 end */
+
   /* career section start */
   .career-section {
     width: auto;
@@ -783,6 +834,7 @@ h4 {
   .nav-button {
     font-size: 25px;
   }
+
   /* gamer section */
   .gamer-des {
     font-size: 25px;
@@ -793,7 +845,7 @@ h4 {
   .games-description {
     font-size: 25px;
   }
-  .play-description {
+  .play-description, .play-description2 {
     font-size: 25px;
   }
 }
