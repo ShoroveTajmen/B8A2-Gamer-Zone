@@ -1,5 +1,5 @@
 /* Shared common style */
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -381,7 +381,7 @@ h4 {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #FF42A5;
+  color: #ff42a5;
   border: none;
 }
 /* career sectiion end */
@@ -398,28 +398,30 @@ h4 {
 }
 .pic1 {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 10px;
   width: 230px;
   height: 70px;
   border-radius: 50px;
   background: #fff;
+  border: none;
+
+}
+.pic1 span {
+  margin-left: 3px;
+  color: #0b0223;
+  font-size: 15px;
+  font-weight: 600;
 }
 .pic1:hover {
   border: 1px solid rgb(239, 10, 132);
 }
-.pic1:hover .game-des {
+.pic1:hover span {
   color: rgb(239, 10, 132);
 }
-.game-des {
-  color: #0b0223;
-  font-size: 20px;
-  font-weight: 600;
-}
-/* .game-des:hover{
-  color: #ff42a5;
-} */
 .row1-games {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -427,8 +429,10 @@ h4 {
   max-width: 1000px;
   margin: 0 auto;
   gap: 10px;
-  padding-top: 130px;
+  padding-top: 130px;  
+  
 }
+
 .row2-games {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -438,6 +442,7 @@ h4 {
   gap: 10px;
   margin-top: 20px;
 }
+/* game types section end */
 
 /* footer style start */
 .footer-container {
@@ -501,10 +506,39 @@ h4 {
 }
 /* footer sectiion end */
 
+/* taypes of game start */
+/* .gamingg-container {
+  width: 1920px;
+  height: 427px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  margin-top: 30px;
+} */
+.game-btn {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+  border: none;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.game-btn span {
+  margin-left: 5px;
+}
+
 /* Responsive part start here */
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
-  *{
+  * {
     margin: 0px;
     padding: 0px;
   }
@@ -574,7 +608,7 @@ h4 {
   .gamer-info {
     text-align: center;
   }
-  .gamer-des{
+  .gamer-des {
     font-size: 15px;
   }
   /* gamer section end */
@@ -651,28 +685,29 @@ h4 {
   }
   /* play section end */
   /* career section start */
-  .career-section{
+  .career-section {
     width: auto;
     height: auto;
   }
-  .career-container{
+  .career-container {
     flex-direction: column;
   }
-  .career-info{
+  .career-info {
     font-size: 10px;
     font-weight: 400;
     margin: 20px;
   }
-  .career-des{
+  .career-des {
     font-size: 15px;
   }
-  .sec, .cou{
+  .sec,
+  .cou {
     font-size: 15px;
   }
-  .career-btn{
+  .career-btn {
     padding: 10px 20px;
   }
-  .c-img{
+  .c-img {
     width: 300px;
     height: 350px;
   }
@@ -685,27 +720,28 @@ h4 {
   }
   .row1-games {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 40px;
   }
   .row2-games {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .pic1 {
-    width: 150px;
+    width: 126px;
     height: 50px;
     border-radius: 50px;
     background: #fff;
   }
-  .game-pic {
+  .g-img {
     width: 30px;
     height: 30px;
   }
-  .game-des {
-    font-size: 15px;
-    font-weight: 300;
+  .pic1 span {
+    font-size: 12px;
+    margin-left: 0px;
   }
+  /* game types section end */
 
   /* footer section start */
   .footer-container {
@@ -735,30 +771,29 @@ h4 {
 }
 
 /* Responsive ffor tablet */
-@media screen and (min-width:576px) and (max-width:768px) {
-  *{
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  * {
     margin: 0px;
     padding: 0px;
   }
-/* nav bar */
-.nav-item{
-  font-size: 25px;
-}
-.nav-button{
-  font-size: 25px;
-}
-/* gamer section */
-.gamer-des{
-  font-size: 25px;
-}
-h4{
-  font-size: 20px;
-}
-.games-description{
-  font-size: 25px;
-}
-.play-description{
-  font-size: 25px;
-}
- 
+  /* nav bar */
+  .nav-item {
+    font-size: 25px;
+  }
+  .nav-button {
+    font-size: 25px;
+  }
+  /* gamer section */
+  .gamer-des {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .games-description {
+    font-size: 25px;
+  }
+  .play-description {
+    font-size: 25px;
+  }
 }
